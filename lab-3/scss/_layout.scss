@@ -1,0 +1,122 @@
+@use "variables" as v;
+@use "mixins" as m;
+
+.container {
+  @include m.container;
+}
+
+.section {
+  padding-block: v.$space-xl;
+
+  &__title {
+    font-size: 1.75rem;
+    margin-bottom: v.$space-xs;
+  }
+
+  &__subtitle {
+    color: v.$color-muted;
+    margin-bottom: v.$space-lg;
+  }
+}
+
+.header {
+  border-bottom: 1px solid v.$color-border;
+  padding-block: v.$space-md;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-md;
+
+    @include m.respond-to(v.$bp-tablet) {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}
+
+.hero {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: v.$space-lg;
+  padding-block: v.$space-xl;
+
+  &__title {
+    font-size: clamp(1.8rem, 6vw, 3.2rem);
+    line-height: 1.2;
+    margin-bottom: v.$space-md;
+  }
+
+  &__description {
+    color: v.$color-muted;
+    font-size: 1.1rem;
+    margin-bottom: v.$space-lg;
+  }
+
+  &__image img {
+    border-radius: v.$radius;
+    object-fit: cover;
+    width: 100%;
+  }
+
+  @include m.respond-to(v.$bp-tablet) {
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+  }
+}
+
+.monitoring-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: v.$space-md;
+
+  @include m.respond-to(v.$bp-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include m.respond-to(v.$bp-desktop) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: v.$space-md;
+
+  @include m.respond-to(v.$bp-tablet) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include m.respond-to(v.$bp-desktop) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.footer {
+  background-color: v.$color-footer;
+  color: #ffffff;
+  padding-top: v.$space-xl;
+  margin-top: v.$space-xl;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: v.$space-lg;
+
+    @include m.respond-to(v.$bp-tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  &__copyright {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin-top: v.$space-xl;
+    padding-block: v.$space-md;
+    font-size: 0.9rem;
+    color: #94a3b8;
+  }
+}

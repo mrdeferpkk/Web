@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акустична варта — Адаптивний моніторинг</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container header__inner">
+            <nav class="nav">
+                <a href="#home" class="nav__link nav__link--active">Головна</a>
+                <a href="#monitoring" class="nav__link">Моніторинг</a>
+                <a href="#services" class="nav__link">Послуги</a>
+                <a href="#order" class="nav__link">Замовити</a>
+                <a href="#contacts" class="nav__link">Контакти</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO BANNER SECTION -->
+        <section class="hero-section container" id="home">
+            <div class="hero-banner">
+                <img src="assets/images/2_lab_header.png" alt="Акустична варта" class="hero-banner__img">
+            </div>
+            <div class="hero-action">
+                <a href="#order" class="btn btn--primary">Замовити дослідження</a>
+            </div>
+        </section>
+
+        <!-- MONITORING SECTION -->
+        <section class="section container" id="monitoring">
+            <h2 class="section__title">Поточний моніторинг</h2>
+            <div class="monitoring-grid">
+                <article class="card card--monitoring">
+                    <span class="card__label">Об'єкт</span>
+                    <h3 class="card__value">ЖК «Зелений»</h3>
+                    <p class="card__meta">Київ, вул. Лісова, 12</p>
+                </article>
+                <article class="card card--monitoring">
+                    <span class="card__label">Середній рівень</span>
+                    <h3 class="card__value card__value--success">54 дБ</h3>
+                    <span class="badge badge--success">Норма</span>
+                </article>
+                <article class="card card--monitoring">
+                    <span class="card__label">Період вимірювань</span>
+                    <h3 class="card__value">08:00 – 18:00</h3>
+                    <p class="card__meta">Сьогодні</p>
+                </article>
+                <article class="card card--monitoring">
+                    <span class="card__label">Кількість точок</span>
+                    <h3 class="card__value">6</h3>
+                    <p class="card__meta">Активні датчики</p>
+                </article>
+                <article class="card card--monitoring">
+                    <span class="card__label">Статус</span>
+                    <h3 class="card__value card__value--small">Вимірювання тривають</h3>
+                </article>
+            </div>
+        </section>
+
+        <!-- SERVICES SECTION -->
+        <section class="section container" id="services">
+            <h2 class="section__title">Напрями роботи</h2>
+            <div class="services-grid">
+                <article class="card card--service">
+                    <h3 class="card__title">Житлові комплекси</h3>
+                    <p class="card__text">Моніторинг шуму у дворах та на прилеглих територіях.</p>
+                </article>
+                <article class="card card--service">
+                    <h3 class="card__title">Офісні центри</h3>
+                    <p class="card__text">Аналіз акустичного комфорту в робочих зонах.</p>
+                </article>
+                <article class="card card--service">
+                    <h3 class="card__title">Підприємства</h3>
+                    <p class="card__text">Вимірювання та оцінка виробничого шуму.</p>
+                </article>
+                <article class="card card--service">
+                    <h3 class="card__title">Масові заходи</h3>
+                    <p class="card__text">Контроль рівня шуму на концертах і фестивалях.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- WARNING BANNER -->
+        <section class="container">
+            <div class="warning">
+                <h3 class="warning__title">Увага!</h3>
+                <p class="warning__text">На точці №4 (вул. Центральна) зафіксовано підвищений рівень шуму — 72 дБ. Дані передано на додатковий аналіз.</p>
+            </div>
+        </section>
+
+        <!-- MEASUREMENTS TABLE -->
+        <section class="section container">
+            <h2 class="section__title">Останні вимірювання</h2>
+            <div class="table-wrapper">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Дата і час</th>
+                            <th>Місце</th>
+                            <th>Рівень шуму</th>
+                            <th>Статус</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>12.11.2024 16:20</td>
+                            <td>Вул. Центральна</td>
+                            <td class="text-danger">72 дБ</td>
+                            <td><span class="badge badge--danger">Перевищення</span></td>
+                        </tr>
+                        <tr>
+                            <td>12.11.2024 13:45</td>
+                            <td>ЖК «Зелений»</td>
+                            <td class="text-success">54 дБ</td>
+                            <td><span class="badge badge--success">Норма</span></td>
+                        </tr>
+                        <tr>
+                            <td>12.11.2024 11:10</td>
+                            <td>Бізнес-центр «Парус»</td>
+                            <td class="text-success">60 дБ</td>
+                            <td><span class="badge badge--success">Норма</span></td>
+                        </tr>
+                        <tr>
+                            <td>11.11.2024 19:30</td>
+                            <td>Міський парк</td>
+                            <td class="text-success">48 дБ</td>
+                            <td><span class="badge badge--success">Норма</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- ORDER FORM -->
+        <section class="section container" id="order">
+            <h2 class="section__title">Замовити дослідження</h2>
+            <p class="section__subtitle">Заповніть форму, і ми зв'яжемося з вами для уточнення деталей.</p>
+            
+            <form class="form">
+                <div class="form__fields">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Ім'я *</label>
+                        <input type="text" id="name" class="form__input" placeholder="Ваше ім'я" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email *</label>
+                        <input type="email" id="email" class="form__input" placeholder="example@email.com" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="type" class="form__label">Тип об'єкта *</label>
+                        <select id="type" class="form__select" required>
+                            <option value="" disabled selected>Оберіть тип</option>
+                            <option value="residential">Житловий комплекс</option>
+                            <option value="office">Офісний центр</option>
+                            <option value="industrial">Підприємство</option>
+                            <option value="event">Масовий захід</option>
+                        </select>
+                    </div>
+                    <div class="form__group">
+                        <label for="period" class="form__label">Бажаний період *</label>
+                        <input type="text" id="period" class="form__input" placeholder="дд.мм.рррр – дд.мм.рррр" required>
+                    </div>
+                </div>
+                <div class="form__group form__description">
+                    <label for="message" class="form__label">Опис завдання</label>
+                    <textarea id="message" class="form__textarea" rows="4" placeholder="Опишіть ваше завдання..."></textarea>
+                </div>
+                <div class="form__actions">
+                    <button type="submit" class="btn btn--primary">Надіслати заявку</button>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
