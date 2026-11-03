@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Запропонувати місто</title>
+</head>
+<body>
+    <header>
+        <h1>Запропонувати місто для наступного рейтингу</h1>
+        <nav>
+            <a href="index.html">Головна</a> |
+            <a href="city-1.html">Київ</a> |
+            <a href="city-2.html">Париж</a> |
+            <a href="city-3.html">Токіо</a> |
+            <a href="form.html">Запропонувати місто</a>
+        </nav>
+    </header>
+
+    <main>
+        <form action="#" method="POST">
+            <div>
+                <label for="name">Ваше ім'я:</label><br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <br>
+            <div>
+                <label for="email">Ваш Email:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <br>
+            <div>
+                <label for="city-name">Назва міста:</label><br>
+                <input type="text" id="city-name" name="city_name" required>
+            </div>
+            <br>
+            <div>
+                <label for="continent">Континент:</label><br>
+                <select id="continent" name="continent">
+                    <option value="europe">Європа</option>
+                    <option value="asia">Азія</option>
+                    <option value="americas">Америка</option>
+                    <option value="other">Інший</option>
+                </select>
+            </div>
+            <br>
+            <div>
+                <label for="reason">Чому варто відвідати це місто?</label><br>
+                <textarea id="reason" name="reason" rows="4" cols="40" required></textarea>
+            </div>
+            <br>
+            <div>
+                <button type="submit">Надіслати пропозицію</button>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+        <p><a href="index.html">← На головну</a></p>
+    </footer>
+</body>
+</html>
