@@ -1,0 +1,78 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #1f2937;
+  background: #f8fafc;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  margin-top: 0;
+  color: #667085;
+}
+
+.sensor-form {
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+  margin: 24px 0;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  background: #ffffff;
+}
+
+.sensor-form input {
+  padding: 10px 12px;
+  border: 1px solid #b8c0cc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+button {
+  padding: 9px 14px;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+  background: #1769aa;
+  color: white;
+}
+
+.sensor-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.sensor-card {
+  padding: 18px;
+  border: 1px solid #d0d5dd;
+  border-radius: 10px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(31, 41, 55, 0.08);
+}
+
+.sensor-card.inactive {
+  opacity: 0.55;
+  background: #f2f4f7;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 14px;
+  flex-wrap: wrap;
+}
+
+.delete-button {
+  background: #b42318;
+}
