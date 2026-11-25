@@ -35,13 +35,26 @@ jobs:
         working-directory: lab-9/acoustic-watch
         run: npm run build -- --base-href=/Web/lab-9/acoustic-watch/browser/
 
+      - name: Prepare Pages structure
+        run: |
+          mkdir -p _site/lab-9/acoustic-watch/browser
+          cp -R lab-9/acoustic-watch/dist/acoustic-watch/browser/. _site/lab-9/acoustic-watch/browser/
+          cat > _site/index.html <<'EOF'
+          <!doctype html>
+          <meta charset="utf-8">
+          <meta http-equiv="refresh" content="0; url=lab-9/acoustic-watch/browser/">
+          <title>Acoustic Watch</title>
+          EOF
+
       - name: Configure Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: lab-9/acoustic-watch/dist/acoustic-watch/browser
+          path: _site
 
   deploy:
     needs: build
